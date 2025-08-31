@@ -8,7 +8,7 @@
 clock = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 
 #get inputs for time now and alarm
-time_now_input = int(input('Enter the time in hours (from 0 to 23): '))
+time_now_input = int(input('Enter the current time in hours (from 0 to 23): '))
 alarm_input = int(input('How many hours until you would like your alarm to go off?: '))
 
 #determine the position of time now in the "clock" list
@@ -22,4 +22,5 @@ for i in range(alarm_input):
 
 #return the alarm time based on the new time_now_index
 alarm_time = clock[time_now_index]
-print('Alarm time: ', alarm_time)
+print('Your alarm will go off at ', alarm_time)
+
